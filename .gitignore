@@ -1,5 +1,6 @@
 # Ignorar configuración de Visual Studio Code
 .vscode/
+.clone/
 
 # Archivos del sistema
 .DS_Store
