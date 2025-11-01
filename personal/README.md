@@ -16,4 +16,5 @@ comando  | Descripción
 ---------|-------------------------------
 pip list | Lista las librerias instaladas
 
+Pararse en la principal (envg339) IA_TALENTOTECH\G339_IA\Scripts\activate
 deactivate para apagar el entorno virtual
