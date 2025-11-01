@@ -1,6 +1,7 @@
 # Ignorar configuración de Visual Studio Code
 .vscode/
-clone/
+clone/ 
+envg339/
 
 # Archivos del sistema
 .DS_Store
