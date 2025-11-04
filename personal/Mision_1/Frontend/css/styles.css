@@ -13,4 +13,16 @@
     }       
     h4 {
         color: red;
+    }  
+
+    div {
+        border: 2px solid rgb(6, 236, 129);
     } 
+
+    .miestilo{ 
+        color: silver;
+    }
+     
+    #otro_estilo{ 
+        color: purple;
+    }
