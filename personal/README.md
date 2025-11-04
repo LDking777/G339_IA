@@ -16,5 +16,7 @@ comando  | Descripción
 ---------|-------------------------------
 pip list | Lista las librerias instaladas
 
+Set-ExecutionPolicy Unrestricted "Cuando el dispositivo tenga restringido politicas especificas"
+
 Pararse en la principal (envg339) IA_TALENTOTECH\G339_IA\Scripts\activate
 deactivate para apagar el entorno virtual
