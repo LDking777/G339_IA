@@ -1,7 +1,36 @@
-    body {
+/*     body {
         background-color: burlywood;
         margin: 20px;
+    } */
+
+    *{
+        margin: 0;
+        padding: 0;
+    } 
+
+    header{
+        background-color: #007acc;
+        color: white;
+        padding: 20px; 
+        text-align: center;
+    }   
+
+    nav ul {
+        list-style-type: none;
+        display: flex; 
+        justify-content: center; 
+        margin-top: 10px; 
+    }   
+    nav ul li {        
+        margin: 0 15px; 
+    } 
+
+    nav ul li a {
+        color: white; 
+        text-decoration: none; 
+        font-weight: bold; 
     }
+
     h1 {
         color: blue;
     }     
@@ -13,16 +42,15 @@
     }       
     h4 {
         color: red;
-    }  
+    }   
 
-    div {
-        border: 2px solid rgb(6, 236, 129);
+    .titulo {
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+        color: gold;
     } 
 
-    .miestilo{ 
-        color: silver;
+    .divdeh {
+        background-color: rgb(103, 224, 141);
     }
-     
-    #otro_estilo{ 
-        color: purple;
-    }
+
