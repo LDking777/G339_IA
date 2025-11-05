@@ -19,4 +19,10 @@ pip list | Lista las librerias instaladas
 Set-ExecutionPolicy Unrestricted "Cuando el dispositivo tenga restringido politicas especificas"
 
 Pararse en la principal (envg339) IA_TALENTOTECH\G339_IA\Scripts\activate
-deactivate para apagar el entorno virtual
+deactivate para apagar el entorno virtual 
+
+``` 
+print("Hola mundo") 
+``` 
+
+Asi se escribe dentro del markdown para refenciar texto dentro del texto 
