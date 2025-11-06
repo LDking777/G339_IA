@@ -52,5 +52,26 @@
 
     .divdeh {
         background-color: rgb(103, 224, 141);
+    } 
+/* Estilos footer */
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        position: relative;
+        width: 100%;
+    } 
+    
+    .contenido{
+        padding: 40px;
+        text-align: center;
     }
+    .formulario{
+        max-width: 500px;
+        margin: 30px auto;
+        background-color: #3fe90b; 
+        padding: 20px;
+        border-radius: 8px;
+    }   
 
