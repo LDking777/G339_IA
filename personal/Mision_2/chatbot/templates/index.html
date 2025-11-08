@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot Supervisado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #3cc402;
+            margin: 50px;
+        }
+        .chat-container {
+            max-width: 500px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        input[type=text] {
+            width: 80%;
+            padding: 8px;
+        }
+        button {
+            padding: 8px 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <h2>💬 Chatbot Supervisado</h2>
+        <div id="chat"></div>
+        <input type="text" id="userInput" placeholder="Escribe algo...">
+        <button onclick="sendMessage()">Enviar</button>
+    </div>
+
+    <script>
+        async function sendMessage() {
+            const userInput = document.getElementById("userInput").value;
+            const response = await fetch("/get_response", {
+                method: "POST",
+                headers: {"Content-Type": "application/json"},
+                body: JSON.stringify({ message: userInput })
+            });
+            const data = await response.json();
+            document.getElementById("chat").innerHTML += `<p><b>Tú:</b> ${userInput}</p>`;
+            document.getElementById("chat").innerHTML += `<p><b>Bot:</b> ${data.response}</p>`;
+            document.getElementById("userInput").value = "";
+        }
+    </script>
+</body>
+</html>
