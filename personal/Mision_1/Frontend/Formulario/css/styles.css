@@ -31,7 +31,7 @@
         font-weight: bold; 
     }
 
-    h1 {
+ /*    h1 {
         color: blue;
     }     
     h2 {
@@ -42,7 +42,7 @@
     }       
     h4 {
         color: red;
-    }   
+    }  */  
 
     .titulo {
         text-align: left;
@@ -70,8 +70,41 @@
     .formulario{
         max-width: 500px;
         margin: 30px auto;
-        background-color: #3fe90b; 
+        background-color: #007acc; 
         padding: 20px;
         border-radius: 8px;
     }   
 
+.formulario h2{ 
+    margin-bottom: 15px;
+    text-align: center;
+} 
+
+.formulario label {
+     display: block;
+     margin-top: 10px; 
+     font-weight: bold;
+} 
+
+.formulario input, 
+.formulario textarea{
+    width: 90%;
+    padding: 10px; 
+    margin-top: 5px;
+    border-radius: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.formulario button{
+    margin-top: 15px;
+    padding: 10px 20px; 
+    background-color: #333; 
+    color: white; 
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.formulario button:hover{
+    background-color: #555;
+}

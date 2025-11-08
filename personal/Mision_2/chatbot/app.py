@@ -17,7 +17,7 @@ model, vectorizer, unique_answer = build_and_train_model(training_data)
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return render_template("chat_vista.html")
 
 @app.route("/get_response", methods=["POST"])
 def get_response():
