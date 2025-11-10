@@ -2,7 +2,8 @@
 .vscode/
 clone/ 
 envg339/ 
-env/
+env/ 
+personal/Mision_2/chatbot/__pycache__/
 
 # Archivos del sistema
 .DS_Store
