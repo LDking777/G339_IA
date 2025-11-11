@@ -31,22 +31,24 @@ def build_and_train_model(train_pairs):
     print("Modelo entrenado y guardado exitosamente.")
     #guardar el vectorizador
     return model, vectorizer, unique_answer 
+
 def load_model():
-    if(
-        os.path.exists(MODEL_DIR)
-       and os.path.exists(ANSWER_PATH)
-       and os.path.exists(VECTORIZER_PATH)      
-    ): 
+    if (
+        os.path.exists(MODEL_PATH)
+        and os.path.exists(VECTORIZER_PATH)
+        and os.path.exists(ANSWER_PATH)
+    ):
         with open(MODEL_PATH, "rb") as f:
             model = pickle.load(f)
         with open(VECTORIZER_PATH, "rb") as f:
             vectorizer = pickle.load(f)
         with open(ANSWER_PATH, "rb") as f:
-            unique_answer = pickle.load(f)  
+            unique_answer = pickle.load(f)
         print("Modelo cargado exitosamente.")
-    else: 
-        print("No hay modelo guardado, será necesario entrenarlo") 
-        return model, vectorizer, unique_answer 
+        return model, vectorizer, unique_answer
+    else:
+        print("No hay modelo guardado, será necesario entrenarlo.")
+        return None, None, None
        
 def predict_answer(model, vectorizer, unique_answer, user_text):
     x = vectorizer.transform([user_text])
