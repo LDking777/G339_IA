@@ -16,4 +16,11 @@ img{
     color: #3498         !important;
 } 
 
-.car
+.card{ 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+} 
+
+.card:hover{ 
+    transform: translatey(-5px); 
+    box-shadow: 0 10px rgba(0,0,0,0.1); 
+}
